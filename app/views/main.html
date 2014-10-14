@@ -1,0 +1,14 @@
+<div class="jumbotron" ng-controller='MainCtrl'>
+  <h1>Find A Pothole</h1>
+  <div id='map'>
+    
+<script>
+var map = L.map('map').setView([37.8044,-122.2708], 13);
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        //attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+var marker = L.marker([37.800843, -122.243184]).addTo(map);
+</script>
+  </div>
+  
+</div>
